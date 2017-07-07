@@ -1,26 +1,16 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# ionic app, Revisar estado de conexión a internet
 
-## How to use this template
+Clonar/descargar
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+``
+npm install
+``
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+Asegúrate de instalado este plugin en el proyecto
 
-### With the Ionic CLI:
+``
+cordova plugin add cordova-plugin-network-information
+``
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
-
-Then, to run it, cd into `myBlank` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
+### Fuente
+https://www.thepolyglotdeveloper.com/2016/01/determine-network-availability-in-an-ionic-2-mobile-app/
