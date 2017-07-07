@@ -1,14 +1,40 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Detectar el internet
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
+
+  <h2>Estado del internet</h2>
+
+  <button ion-button
+          *ngIf="online"
+          block
+          color="secondary">
+    Online!
+  </button>
+
+  <button ion-button
+          *ngIf="!online"
+          block
+          color="danger">
+    off-line
+  </button>
+
+  <h4>Descripción</h4>
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+    {{ estado }}
   </p>
+
+
+  <button ion-button block
+          (click)="checkNetwork()">
+      Revisar status de nuevo!
+  </button>
+
+
+
 </ion-content>
